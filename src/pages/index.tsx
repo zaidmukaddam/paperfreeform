@@ -23,6 +23,7 @@ const IndexPage: NextPage = () => {
     <Layout
       title="PaperFreeForm"
       icon="/icon.svg"
+      description='A Free Form Builder to save trees and create beautiful forms.'
       className="overflow-y-auto lg:flex lg:flex-row-reverse "
     >
       <div className="lg:w-1/4">
