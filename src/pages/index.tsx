@@ -46,7 +46,7 @@ const IndexPage: NextPage = () => {
             <span className='text-blue-400 text-xs'>The climate crisis is a problem.</span>  <br />
             <span className='text-green-400 text-xs'>And climate change is primarily caused by deforestation.</span>  <br />
             <span className='text-blue-400 text-xs'>PaperFreeForm is the solution.</span>  <br />
-            <span className="text-green-400 text-xs">You can help save the world by using PaperFreeForm 🌏.</span>
+            <span className="text-green-400 text-xs">You can help save the world by using PaperFreeForm.</span>
           </p>
           <Link passHref href="/create">
             <Button variant="primary" size="lg">
