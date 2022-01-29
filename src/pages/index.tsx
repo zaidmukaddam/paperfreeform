@@ -34,7 +34,7 @@ const IndexPage: NextPage = () => {
             <LoginIcon className="icon" />
           </a>
         </div>
-        <div className="p-4">
+        <div className="p-4 pb-0">
           <h1 className="font-bold text-3xl leading-none mb-4">
             Easy form builder that works like a doc
           </h1>
@@ -55,12 +55,12 @@ const IndexPage: NextPage = () => {
             </Button>
           </Link>
           <span className="text-sm text-green-400 italic font-semibold">No signup required</span>
-          <p className="text-gray-700 py-2 mb-5 font-semibold pt-3">
+          <p className="text-gray-700 py-2 font-semibold pt-3">
             Seamlessly create online forms for all purposes and collect data
             without knowing how to code
           </p>
         </div>
-        <div className="p-4 pt-1">
+        <div className="p-4 pt-1 pb-0">
           <ul>
             <li className="flex items-center gap-2 my-2">
               <DocumentTextIcon className="icon text-gray-400" />
@@ -87,8 +87,8 @@ const IndexPage: NextPage = () => {
       >
         <Image
           src="/landing/screenshot.png"
-          width={1200}
-          height={630}
+          width={1000}
+          height={530}
           className="rounded overflow-hidden w-full"
           alt="App screenshot"
         />
