@@ -42,10 +42,13 @@ const IndexPage: NextPage = () => {
             Seamlessly create online forms for all purposes and collect data
             without knowing how to code
           </p>
-          <p className="text-gray-700 py-2 mb-5">
+          <p className="text-sm text-gray-700 py-2 mb-5">
             {/* a small reason to use paperfreeform insted of paper to reduce deforestation */}
-            Don&#39;t Cut Trees to make forms. Use PaperFreeForm instead. It&#39;s a lot easier. <br />
-            Deforestion is a problem. PaperFreeForm is a solution.
+            Don&#39;t Cut Trees to make forms. <br />
+            Use PaperFreeForm instead. <br />
+            It&#39;s a lot easier. <br />
+            Deforestion is a problem. <br />
+            PaperFreeForm is a solution. <br />
             You can save the world by using PaperFreeForm 🌏❤️.
           </p>
           <Link passHref href="/create">
