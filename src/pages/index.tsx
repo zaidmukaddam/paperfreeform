@@ -34,19 +34,19 @@ const IndexPage: NextPage = () => {
             <LoginIcon className="icon" />
           </a>
         </div>
-        <div className="p-4 pb-0 pt-0">
+        <div className="p-3 pb-0 pt-0">
           <h1 className="font-bold text-xl leading-none mb-3">
             Easy form builder that works like a doc
           </h1>
-          <p className="py-2 mb-5 italic font-semibold text-sm">
+          <p className="py-2 mb-5 italic font-semibold antialiased font-sans leading-4">
             {/* a small reason to use paperfreeform insted of paper to reduce deforestation */}
-            <span className="text-green-400">Don&#39;t cut down trees to make forms. </span> <br />
-            <span className='text-blue-400'>Use PaperFreeForm instead.</span>  <br />
-            <span className='text-green-400'>It&#39;s a lot simpler.</span>  <br />
-            <span className='text-blue-400'>The climate crisis is a problem.</span>  <br />
-            <span className='text-green-400'>And climate change is primarily caused by deforestation.</span>  <br />
-            <span className='text-blue-400'>PaperFreeForm is the solution.</span>  <br />
-            <span className="text-green-400">You can help save the world by using PaperFreeForm 🌏.</span>
+            <span className="text-green-400 text-xs">Don&#39;t cut down trees to make forms. </span> <br />
+            <span className='text-blue-400 text-xs'>Use PaperFreeForm instead.</span>  <br />
+            <span className='text-green-400 text-xs'>It&#39;s a lot simpler.</span>  <br />
+            <span className='text-blue-400 text-xs'>The climate crisis is a problem.</span>  <br />
+            <span className='text-green-400 text-xs'>And climate change is primarily caused by deforestation.</span>  <br />
+            <span className='text-blue-400 text-xs'>PaperFreeForm is the solution.</span>  <br />
+            <span className="text-green-400 text-xs">You can help save the world by using PaperFreeForm 🌏.</span>
           </p>
           <Link passHref href="/create">
             <Button variant="primary" size="lg">
