@@ -21,7 +21,7 @@ import { Button } from 'components/common/Button'
 const IndexPage: NextPage = () => {
   return (
     <Layout
-      title="PaperFreeForm - Simple online form builder that works like a doc"
+      title="PaperFreeForm"
       icon="/icon.svg"
       className="overflow-y-auto lg:flex lg:flex-row-reverse "
     >
