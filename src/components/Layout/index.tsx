@@ -2,6 +2,8 @@ import * as React from 'react'
 import cx from 'classnames'
 import Head from 'next/head'
 import { Toaster } from 'react-hot-toast'
+import { SEO } from "components/common/SEO";
+
 
 interface Layout {
   title: string | null
@@ -13,7 +15,7 @@ interface Layout {
 
 const Layout = ({ title, description, icon, className, children }: Layout) => {
   title = title || 'Untitled form'
-  icon = icon || '/img/defaultIcon.svg'
+  icon = icon || '/icon.svg'
   return (
     <main
       role="main"
@@ -24,8 +26,15 @@ const Layout = ({ title, description, icon, className, children }: Layout) => {
     >
       <Head>
         <title>{title}</title>
+        <meta charSet="UTF-8" />
+        <meta name="theme-color" content="#111827" />
         <meta name="description" content={description} />
         <link rel="shortcut icon" href={icon} type="image/x-icon" />
+        <meta name="image" content='https://paperfreeform.co/cover.png' />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
       <Toaster />
       {children}
