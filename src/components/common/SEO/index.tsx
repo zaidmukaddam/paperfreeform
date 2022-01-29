@@ -25,6 +25,7 @@ const SEO = ({ title, description, icon, image, url }: SEOProps) => {
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={description} />
+      <meta name="image" content='https://paperfreeform.co/cover.png'/>
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
