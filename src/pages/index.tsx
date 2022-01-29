@@ -38,18 +38,15 @@ const IndexPage: NextPage = () => {
           <h1 className="font-bold text-3xl leading-none mb-4">
             Easy form builder that works like a doc
           </h1>
-          <p className="text-gray-700 py-2 mb-5">
-            Seamlessly create online forms for all purposes and collect data
-            without knowing how to code
-          </p>
-          <p className="text-sm text-blue-400 py-2 mb-5">
+          <p className="py-2 mb-5 italic font-semibold text-sm">
             {/* a small reason to use paperfreeform insted of paper to reduce deforestation */}
-            Don&#39;t Cut Trees to make forms. <br />
-            Use PaperFreeForm instead. <br />
-            It&#39;s a lot easier. <br />
-            Deforestion is a problem. <br />
-            PaperFreeForm is a solution. <br />
-            You can save the world by using PaperFreeForm 🌏❤️.
+            <span className="text-green-400">Don&#39;t cut down trees to make forms. </span> <br />
+            <span className='text-blue-400'>Use PaperFreeForm instead.</span>  <br />
+            <span className='text-green-400'>It&#39;s a lot simpler.</span>  <br />
+            <span className='text-blue-400'>The climate crisis is a problem.</span>  <br />
+            <span className='text-green-400'>And climate change is primarily caused by deforestation.</span>  <br />
+            <span className='text-blue-400'>PaperFreeForm is the solution.</span>  <br />
+            <span className="text-green-400">You can help save the world by using PaperFreeForm 🌏.</span>
           </p>
           <Link passHref href="/create">
             <Button variant="primary" size="lg">
@@ -57,9 +54,13 @@ const IndexPage: NextPage = () => {
               <ArrowRightIcon className="icon" />
             </Button>
           </Link>
-          <span className="text-sm text-green-400 italic">No signup required</span>
+          <span className="text-sm text-green-400 italic font-semibold">No signup required</span>
+          <p className="text-gray-700 py-2 mb-5 font-semibold pt-3">
+            Seamlessly create online forms for all purposes and collect data
+            without knowing how to code
+          </p>
         </div>
-        <div className="p-4">
+        <div className="p-4 pt-1">
           <ul>
             <li className="flex items-center gap-2 my-2">
               <DocumentTextIcon className="icon text-gray-400" />
@@ -84,15 +85,13 @@ const IndexPage: NextPage = () => {
         className="w-full px-4 py-8 lg:h-full lg:flex-1 flex items-center justify-center bg-cover bg-center h-64 m-0"
         style={{ backgroundImage: 'url(./landing/background.svg)' }}
       >
-        {/* <div className="w-3/4 shadow-2xl ring-1 ring-black/5 rounded overflow-hidden bg-white"> */}
-          <Image
-            src="/landing/screenshot.png"
-            width={1200}
-            height={630}
-            className="rounded overflow-hidden w-full"
-            alt="App screenshot"
-          />
-        {/* </div> */}
+        <Image
+          src="/landing/screenshot.png"
+          width={1200}
+          height={630}
+          className="rounded overflow-hidden w-full"
+          alt="App screenshot"
+        />
       </div>
     </Layout>
   )
