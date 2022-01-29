@@ -11,6 +11,6 @@ module.exports = {
     description: 'The simplest online form builder that works like a doc',
     icon: '/icon.svg',
     url: 'https://paperfreeform.co/',
-    og_image: 'http://paperfreeform.co/pff.svg',
+    og_image: 'https://paperfreeform.co/cover.png',
   },
 }

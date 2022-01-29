@@ -169,7 +169,7 @@ const FormDashboard: NextPage<PageProps> = ({ user, form, responses, notAllowed 
                   type="text"
                   readOnly={true}
                   className="p-2 focus:outline-none bg-gray-100 rounded w-full"
-                  value={`https://pff.vercel.app/${id}/viewform`}
+                  value={`https://paperfreeform.co/${id}/viewform`}
                   onClick={(e) => {
                     const target = e.target as HTMLInputElement
                     target.select()
@@ -186,7 +186,7 @@ const FormDashboard: NextPage<PageProps> = ({ user, form, responses, notAllowed 
                   href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
                     form.title
                   )}&url=${encodeURIComponent(
-                    `https://pff.vercel.app/${id}/viewform`
+                    `https://paperfreeform.co/${id}/viewform`
                   )}`}
                   className="bg-blue-400 text-white btn py-3 px-4 hover:bg-blue-500 gap-4"
                 >
