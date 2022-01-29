@@ -17,9 +17,9 @@
   <h3 align="center">PaperFreeForm</h3>
 
   <p align="center">
+    PaperFreeForm is a Free Form Builder to save trees and create beautiful forms.
+    <br />
     Easy online form builder that works like a doc. Just add form elements as you type and start collecting data.
-    <br />
-    <br />
     <br />
     <a href="https://paperfreeform.co">View Demo</a>
     ·
