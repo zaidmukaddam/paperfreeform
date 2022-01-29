@@ -13,7 +13,7 @@ const SEO = ({ title, description, icon, image, url }: SEOProps) => {
   title = title || process.env.title
   description = description || process.env.description
   icon = icon || process.env.icon
-  image = image || process.env.og_image
+  image = "https://paperfreeform.co/cover.png"
   url = url || process.env.url
 
   return (
