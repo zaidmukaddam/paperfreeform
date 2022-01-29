@@ -27,15 +27,15 @@ const IndexPage: NextPage = () => {
       className="overflow-y-auto lg:flex lg:flex-row-reverse "
     >
       <div className="lg:w-1/4">
-        <div className="flex px-4 py-6 items-center justify-between">
+        <div className="flex px-4 py-4 items-center justify-between">
           <Logo />
           <a className="btn" href="/api/auth/login?returnTo=/create">
             <span>Log In</span>
             <LoginIcon className="icon" />
           </a>
         </div>
-        <div className="p-4 pb-0">
-          <h1 className="font-bold text-3xl leading-none mb-4">
+        <div className="p-4 pb-0 pt-0">
+          <h1 className="font-bold text-xl leading-none mb-3">
             Easy form builder that works like a doc
           </h1>
           <p className="py-2 mb-5 italic font-semibold text-sm">
@@ -60,7 +60,7 @@ const IndexPage: NextPage = () => {
             without knowing how to code
           </p>
         </div>
-        <div className="p-4 pt-1 pb-0">
+        <div className="p-4 pt-1 pb-0 text-sm">
           <ul>
             <li className="flex items-center gap-2 my-2">
               <DocumentTextIcon className="icon text-gray-400" />
@@ -82,7 +82,7 @@ const IndexPage: NextPage = () => {
         </div>
       </div>
       <div
-        className="w-full px-4 py-8 lg:h-full lg:flex-1 flex items-center justify-center bg-cover bg-center h-64 m-0"
+        className="w-full px-4 py-8 lg:h-screen lg:flex-1 flex items-center justify-center bg-cover bg-center h-64 m-0"
         style={{ backgroundImage: 'url(./landing/background.svg)' }}
       >
         <Image
