@@ -55,7 +55,7 @@ const Sidebar = ({ show }: { show: boolean }) => {
           <Logo />
           {user && (
             <a href="/api/auth/logout" className="btn text-sm">
-              <span>Log Out</span>
+              <span className="leading-3">Log Out</span>
               <LogoutIcon className="icon text-gray-500" />
             </a>
           )}
