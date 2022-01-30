@@ -54,8 +54,8 @@ const Sidebar = ({ show }: { show: boolean }) => {
         <div className="flex items-center justify-between p-4">
           <Logo />
           {user && (
-            <a href="/api/auth/logout" className="btn text-sm">
-              <span className="leading-3">Log Out</span>
+            <a href="/api/auth/logout" className="btn text-xs">
+              <span>Log Out</span>
               <LogoutIcon className="icon text-gray-500" />
             </a>
           )}
