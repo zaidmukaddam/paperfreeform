@@ -18,6 +18,7 @@ import toast from 'react-hot-toast'
 import { OverlayPage } from 'components/common/OverlayPage'
 import { Layout } from 'components/editor/Layout'
 import { SEO } from 'components/common/SEO'
+import { optionsAtom } from 'lib/atoms/form'
 
 interface PageProps {
   user: UserProfile
@@ -29,6 +30,7 @@ interface PageProps {
 const FormDashboard: NextPage<PageProps> = ({ user, form, responses, notAllowed }) => {
   const [showSidebar, toggleSidebar] = useAtom(sidebarAtom)
   const router = useRouter()
+  const [, setOptions] = useAtom(optionsAtom)
   const { id } = router.query
 
   if (notAllowed) {
@@ -221,7 +223,12 @@ const FormDashboard: NextPage<PageProps> = ({ user, form, responses, notAllowed 
                         error: `Error while updating form`,
                       })
                       .then(() => {
-                        mutate(`/api/forms/${id}`)
+                        mutate(`/api/forms/${id}`).then(() => {
+                          setOptions((state) => ({
+                            ...state,
+                            publicResponses: value,
+                          }))
+                        })
                       })
                   }}
                 />
@@ -248,7 +255,12 @@ const FormDashboard: NextPage<PageProps> = ({ user, form, responses, notAllowed 
                         error: `Error while updating form`,
                       })
                       .then(() => {
-                        mutate(`/api/forms/${id}`)
+                        mutate(`/api/forms/${id}`).then(() => {
+                          setOptions((state) => ({
+                            ...state,
+                            lockedResponses: value,
+                          }))
+                        })
                       })
                   }}
                 />
