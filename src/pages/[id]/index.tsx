@@ -209,27 +209,34 @@ const FormDashboard: NextPage<PageProps> = ({ user, form, responses, notAllowed 
                   label="Public responses page"
                   checked={form.options.publicResponses}
                   onChange={(value) => {
-                    const updateForm = fetch(`/api/forms/${id}/update`, {
-                      method: 'PATCH',
-                      body: JSON.stringify({
-                        ...form,
-                        options: { ...form.options, publicResponses: value },
-                      }),
-                    })
-                    toast
-                      .promise(updateForm, {
-                        loading: `Updating form`,
-                        success: `Form has been updated`,
-                        error: `Error while updating form`,
+                    if (id) {
+                      const updateForm = fetch(`/api/forms/${id}/update`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({
+                          ...form,
+                          options: { ...form.options, publicResponses: value },
+                        }),
                       })
-                      .then(() => {
-                        mutate(`/api/forms/${id}`).then(() => {
-                          setOptions((state) => ({
-                            ...state,
-                            publicResponses: value,
-                          }))
+                      toast
+                        .promise(updateForm, {
+                          loading: `Updating form`,
+                          success: `Form has been updated`,
+                          error: `Error while updating form`,
                         })
-                      })
+                        .then(() => {
+                          mutate(`/api/forms/${id}`).then(() => {
+                            setOptions((state) => ({
+                              ...state,
+                              publicResponses: value,
+                            }))
+                          })
+                        })
+                    } else {
+                      setOptions((state) => ({
+                        ...state,
+                        publicResponses: value,
+                      }))
+                    }
                   }}
                 />
                 <span className="text-sm text-gray-500 px-4">
@@ -241,27 +248,34 @@ const FormDashboard: NextPage<PageProps> = ({ user, form, responses, notAllowed 
                   label="Lock responses"
                   checked={form.options.lockedResponses}
                   onChange={(value) => {
-                    const updateForm = fetch(`/api/forms/${id}/update`, {
-                      method: 'PATCH',
-                      body: JSON.stringify({
-                        ...form,
-                        options: { ...form.options, lockedResponses: value },
-                      }),
-                    })
-                    toast
-                      .promise(updateForm, {
-                        loading: `Updating form`,
-                        success: `Form has been updated`,
-                        error: `Error while updating form`,
+                    if (id) {
+                      const updateForm = fetch(`/api/forms/${id}/update`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({
+                          ...form,
+                          options: { ...form.options, lockedResponses: value },
+                        }),
                       })
-                      .then(() => {
-                        mutate(`/api/forms/${id}`).then(() => {
-                          setOptions((state) => ({
-                            ...state,
-                            lockedResponses: value,
-                          }))
+                      toast
+                        .promise(updateForm, {
+                          loading: `Updating form`,
+                          success: `Form has been updated`,
+                          error: `Error while updating form`,
                         })
-                      })
+                        .then(() => {
+                          mutate(`/api/forms/${id}`).then(() => {
+                            setOptions((state) => ({
+                              ...state,
+                              lockedResponses: value,
+                            }))
+                          })
+                        })
+                    } else {
+                      setOptions((state) => ({
+                        ...state,
+                        lockedResponses: value,
+                      }))
+                    }
                   }}
                 />
                 <span className="text-sm text-gray-500 px-4">
