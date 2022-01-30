@@ -130,7 +130,7 @@ const EditorNavbar = ({
                 }}
               />
               <LabelSwitch
-                label="Wider layour"
+                label="Wider layout"
                 checked={style.fullWidth}
                 onChange={(value) => {
                   setStyle((state) => ({ ...state, fullWidth: value }))
