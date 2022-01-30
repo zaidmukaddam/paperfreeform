@@ -27,7 +27,7 @@ const SEO = ({ title, description, icon, image, url }: SEOProps) => {
       <meta name="description" content={description} />
       <meta name="image" content='https://paperfreeform.co/cover.png'/>
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-      <link rel="icon" href="/favicon.ico" />
+      {/* <link rel="icon" href="/favicon.ico" /> */}
       <link rel="manifest" href="/site.webmanifest" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
 
